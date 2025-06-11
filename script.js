@@ -65,19 +65,19 @@ function aipress() {
     }else if(play1 == 'rock'){
         if(play2 == 'scissors'){
             status.innerHTML = "Congratulations you won!!";
-        }else if(play2 == 'Paper'){
+        }else if(play2 == 'paper'){
             status.innerHTML = "Sorry you lost";
         }
-    }else if(play1 == 'Paper'){
-        if(player2.src == 'assets/Rock.png'){
+    }else if(play1 == 'paper'){
+        if(play2 == 'rock'){
             status.innerHTML = "Congratulations you won!!";
-        }else if (player2.src == 'assets/Scissors.png'){
+        }else if (play2 == 'scissors'){
             status.innerHTML = "Sorry you lost";
         }
-    }else if(player1.src == 'assets/Scissors.png'){
-        if(player2.src == 'assets/Paper.png'){
+    }else if(play1 == 'scissors'){
+        if(play2 == 'paper'){
             status.innerHTML = "Congratulations you won!!";
-        }else if (player2.src == 'assets/Rock.png'){
+        }else if (play2 == 'rock'){
             status.innerHTML = "Sorry you lost";
         }
     }
