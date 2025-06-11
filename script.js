@@ -1,7 +1,7 @@
 const player1 = document.getElementById("one")
 const player2 = document.getElementById("two")
 
-
+console.log(player1, player2)
 var one
 var two
 var three
@@ -22,7 +22,7 @@ document.addEventListener("keyup", function(event) {
         one = false;
     }else if(event.key === "2"){
         two = false;
-    }else{
+    }else if (event.key === "3"){
         three = false;
     }
     keypress()
@@ -30,10 +30,10 @@ document.addEventListener("keyup", function(event) {
 
 function keypress() {
     if (one){
-        player1.style.backgroundImage = new URL("assets/Rock.png")
+        player1.src = 'assets/Rock.png'
     }else if (two){
-        console.log("2 was pressed");
+        player1.src = 'assets/Paper.png'
     }else if (three){
-        console.log("3 was pressed");
+        player1.src = 'assets/Scissors.png'
     }
 }
