@@ -1,7 +1,7 @@
 const player1 = document.getElementById("one")
 const player2 = document.getElementById("two")
 
-console.log(player1, player2)
+// console.log(player1, player2)
 var one
 var two
 var three
@@ -11,7 +11,7 @@ document.addEventListener("keydown", function(event) {
         one = true;
     }else if(event.key === "2"){
         two = true;
-    }else{
+    }else if(event.key === "3"){
         three = true;
     }
     keypress()
@@ -36,4 +36,9 @@ function keypress() {
     }else if (three){
         player1.src = 'assets/Scissors.png'
     }
+    aipress()
+}
+
+function aipress() {
+    
 }
